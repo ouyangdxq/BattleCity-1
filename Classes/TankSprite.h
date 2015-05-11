@@ -39,7 +39,7 @@ public:
 	void moveUp();
 	void moveDown();
 
-	void moveAction();
+	void fireAction();
 
 	int _speed; // 速度
 	int _life;	// 生命个数

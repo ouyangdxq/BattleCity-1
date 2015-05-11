@@ -150,7 +150,7 @@ void TankSprite::moveDown()
 	this->setPosition(Vec2(this->getPositionX(), this->getPositionY() - _speed));
 }
 
-void TankSprite::moveAction()
+void TankSprite::fireAction()
 {
 	//SpriteFrameCache *frameCache = SpriteFrameCache::sharedSpriteFrameCache();
 	//frameCache->addSpriteFramesWithFile("")
@@ -158,7 +158,7 @@ void TankSprite::moveAction()
 	for (int i = 1; i < 6; i++)
 	{
 		char szImageFileName[256] = {0};
-		sprintf(szImageFileName, "ui/tanks/player_batter_1_up (1).png", i);
+		sprintf(szImageFileName, "ui/tanks/player1_%d.png", i);
 		animation->addSpriteFrameWithFileName(szImageFileName);
 	}
 	animation->setDelayPerUnit(0.1f);
